@@ -1,0 +1,242 @@
+body {
+    text-align: center;
+    background-color: #FFF8E1;
+    background-size: cover;
+    margin: 100px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.encabezado {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #235c21; /* nuevo color de fondo */
+    color: #FFF8E1; /* texto en beige claro */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-inline: 20px;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.encabezado nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.encabezado nav a:hover {
+    background-color: #FFD166; /* un tono dorado suave del logo */
+    color: #1B3B1A; /* verde oscuro para el texto al pasar */
+}
+
+body {
+    text-align: center;
+    background-color: #FFF8E1;
+    background-image: url(imagenes/depositphotos_99003916-stock-photo-top-view-blue-water-caustics.jpg);
+    background-size: cover;
+    margin-top: 120px;
+}
+
+.descripcion {
+    font-size: 1em;
+    font-weight: normal; 
+    line-height: 1.6;
+    margin: 10px auto;
+    max-width: 900px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.productos {
+    font-size: 1.3em;
+    font-weight:normal; 
+    line-height: 1.6;
+    margin: 10px auto;
+    max-width: 900px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.tarjeta {
+    width: 300px;
+    height: 380px;
+    border: 1px solid #2E6B17;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 5px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s, ease-in-out, transform 0.3s, ease-in-out;
+    animation-name: tarjeta-animacion;
+    animation-duration: 2s;
+
+}
+
+.tarjeta-img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.tarjeta h3,
+h4,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-block: 0px;
+    margin-inline: 10px;
+    gap: 10px;
+}
+
+.tarejeta-descripcion {
+    color: #333333;
+}
+
+.tarjeta-buton {
+    color: #ffffff;
+    background-color: #F7931E;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-inline: auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tarjeta-buton:hover {
+    background-color: #e68210;
+}
+
+.tarjeta-grupo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+@keyframes tarjeta-animacion {
+    from {
+        transform: translate(0px, -800px);
+    }
+
+    to {
+        transform: translate(0px, 0px);
+    }
+
+}
+
+.tarjeta:hover {
+    box-shadow: 4px 4px 1px #F7931E;
+    transform: scale(105%);
+
+}
+
+
+.Formulario-pocición {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Formulario {
+    width: 500px;
+    border: 1px solid #2E6B17;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 5px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s, ease-in-out, transform 0.3s, ease-in-out;
+    animation-name: tarjeta-animacion;
+    animation-duration: 2s;
+}
+
+.Formulario-titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-block: 0px;
+    margin-inline: 10px;
+    gap: 10px;
+}
+@keyframes Formulario-animacion {
+    from {
+        transform: translate(0px, -800px);
+    }
+
+    to {
+        transform: translate(0px, 0px);
+    }
+}
+
+.Formulario:hover {
+    box-shadow: 4px 4px 1px #F7931E;
+    transform: scale(105%);
+
+}
+
+footer {
+    background-color: #4C9A2A;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 2em;
+    justify-content: space-around;
+    justify-items: center;
+    color: white;
+}
+
+@counter-style lista-perzonalizada {
+    system: cyclic;
+    symbols: "📞 " "📨" "🌐" "🌐" "🌐";
+    suffix: "";
+}
+
+footer ul {
+    list-style: lista-perzonalizada;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+footer a:visited {
+    color: rgb(255, 255, 255);
+}
+
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copyrigth {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

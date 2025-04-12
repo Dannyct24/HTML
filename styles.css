@@ -23,14 +23,41 @@ main {
     color: #FFF8E1; /* texto en beige claro */
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding-inline: 20px;
     z-index: 10;
     text-decoration: none;
 }
+.encabezado .logo-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.encabezado a {
+    color: white;
+    text-decoration: none;
 
+}
+.bi-person-circle{
+    font-size: 2em;
+    color: white;
+    margin-right: 60PX;
+    cursor: pointer;
+}
+
+
+.encabezado a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+
+.encabezado a:hover {
+    color: rgb(192, 196, 245);
+}
 .encabezado nav a {
     color: #fff;
     text-decoration: none;
@@ -153,52 +180,49 @@ p {
 
 }
 
-
-.Formulario-pocición {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.Formulario {
-    width: 500px;
-    border: 1px solid #2E6B17;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 5px;
-    padding-bottom: 10px;
-    background-color: #ffffff;
-    transition: box-shadow 0.3s, ease-in-out, transform 0.3s, ease-in-out;
-    animation-name: tarjeta-animacion;
-    animation-duration: 2s;
-}
-
-.Formulario-titulo {
+.suscripcion input,
+.suscripcion textarea {
+    width: 90%; 
+    max-width: 600px; 
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #777;
     font-family: Arial, Helvetica, sans-serif;
-    margin-block: 0px;
-    margin-inline: 10px;
-    gap: 10px;
-}
-@keyframes Formulario-animacion {
-    from {
-        transform: translate(0px, -800px);
-    }
-
-    to {
-        transform: translate(0px, 0px);
-    }
+    transition: border-color 0.3s ease;
 }
 
-.Formulario:hover {
-    box-shadow: 4px 4px 1px #F7931E;
-    transform: scale(105%);
+.suscripcion input:focus,
+.suscripcion textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #2E6B17; 
+}
 
+.suscripcion input:invalid,
+.suscripcion textarea:invalid {
+    border-bottom: 2px solid rgb(213, 4, 4);
+}
+
+.suscripcion button {
+    color: #fff;
+    background-color: #F7931E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.suscripcion button:hover {
+    background-color: #2E6B17;
+    transform: scale(1.05);
+}
+
+.suscripcion button:active {
+    background-color: #1b4913;
 }
 
 footer {

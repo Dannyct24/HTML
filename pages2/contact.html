@@ -28,16 +28,21 @@
 <body>
     <header class="encabezado">
 
-        <a href="../index.html">
-            <img src="../icon/favicon.ico" alt="Icono Rinconada de Pijal" style="height: 50px; vertical-align: middle;">
+        <div class="logo-nav">
+            <a href="../index.html">
+                <img src="../icon/favicon.ico" alt="Icono Rinconada de Pijal"
+                    style="height: 50px; vertical-align: middle;">
 
-        </a>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="services.html">Servicios</a>
-            <a href="products.html">Productos</a>
-            <a href="contact.html">Contacto</a>
-        </nav>
+                <nav>
+                    <a href="../index.html">Inicio</a>
+                    <a href="services.html">Servicios</a>
+                    <a href="products.html">Productos</a>
+                    <a href="contact.html">Contacto</a>
+
+                </nav>
+
+            </a>
+        </div>
     </header>
     <main>
         <section>
@@ -46,29 +51,31 @@
                 Pijal estamos felices de ayudarte a planear tu próxima experiencia rural.</p>
         </section><br>
 
-        <div class="Formulario-pocición">
-            <div class="Formulario">
-                <h3 class="Formulario-titulo">Formulario de Contacto</h3>
-                <form action="#" method="post">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
+        <section class="suscripcion">
+            <div class="Formulario-pocición">
+                <div class="Formulario">
+                    <h3 class="Formulario-titulo">Formulario de Contacto</h3>
+                    <form action="#" method="post">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
 
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
+                        <label for="email">Correo electrónico:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
 
-                    <label for="telefono">Teléfono (opcional):</label><br>
-                    <input type="tel" id="telefono" name="telefono"><br><br>
+                        <label for="telefono">Teléfono (opcional):</label><br>
+                        <input type="tel" id="telefono" name="telefono"><br><br>
 
-                    <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
 
-                    <input type="checkbox" id="suscripcion" name="suscripcion">
-                    <label for="suscripcion"> Deseo recibir noticias y promociones por correo</label><br><br>
+                        <input type="checkbox" id="suscripcion" name="suscripcion">
+                        <label for="suscripcion"> Deseo recibir noticias y promociones por correo</label><br><br>
 
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </div><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div><br>
+        </section>
 
     </main>
     <footer>
